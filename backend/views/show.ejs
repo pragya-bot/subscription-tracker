@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show all subscriptions</title>
+</head>
+<body>
+    <h1>All Subscriptions</h1>
+    <ul>
+        <% for(let sub of subs){ %>
+            <li><%= sub.Subname %> - $<%= sub.cost %></li>
+            <li>Billing Cycle: <%= sub.frequency %></li>
+            <li>Start Date: <%= sub.startDate %></li>
+            <li>End Date: <%= sub.endDate %></li>
+            <li>Status: <%= sub.status %></li>
+            <hr>
+        <% } %>
+    </ul>
+</body>
+</html>

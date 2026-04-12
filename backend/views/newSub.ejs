@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newSubscription</title>
+</head>
+<body>
+    <h1>Add New Subscription</h1>
+    <form method="post" action="/sub/newSubscription">
+        <label for="name">Subscription Name:</label>
+        <input type="text" id="name" name="Subname"><br><br>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="cost"><br><br>
+        <label for="frequency">Billing cycle:</label>
+        <select id="frequency" name="frequency">
+            <option value="Daily">Daily</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Monthly">Monthly</option>
+            <option value="Yearly">Yearly</option>
+        </select><br><br>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate"><br><br>
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate"><br><br>
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="Active">Active</option>
+            <option value="Paused">Paused</option>
+            <option value="Cancelled">Cancelled</option>
+        </select>
+        <br><br>
+        <button type="submit">Add Subscription</button>
+    </form>
+</body>
+</html>
