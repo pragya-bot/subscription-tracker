@@ -35,7 +35,9 @@ router.post("/login", async(req,res)=>{
         }
         
         req.session.user_id = user._id;
-        res.render("dashboard",{user});
+
+        // console.log("session id :", req.session.user_id);
+        res.redirect("/sub");
     }
     catch(err){
         console.error("Error logging in:", err);

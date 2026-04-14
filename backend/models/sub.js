@@ -31,6 +31,12 @@ const subscriptionSchema = new mongoose.Schema({
         required: true,
         enum: ['Active', 'Paused', 'Cancelled'],
         message: '{VALUE} is not supported',
+    },
+
+    user:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+        required: true
     }
 })
 

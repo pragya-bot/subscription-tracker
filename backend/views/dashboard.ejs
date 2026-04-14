@@ -9,6 +9,16 @@
     <h1>Hello <%= user.username %></h1>
     <h2>Welcome to your dashboard</h2>
     <h2>Your Subscriptions</h2>
+        <ul>
+        <% for(let sub of subs){ %>
+            <li><%= sub.Subname %> - $<%= sub.cost %></li>
+            <li>Billing Cycle: <%= sub.frequency %></li>
+            <li>Start Date: <%= sub.startDate %></li>
+            <li>End Date: <%= sub.endDate %></li>
+            <li>Status: <%= sub.status %></li>
+            <hr>
+        <% } %>
+    </ul>
     <a href="/sub/new">Add Subscription</a>
 </body>
 </html>
