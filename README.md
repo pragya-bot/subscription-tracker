@@ -10,7 +10,7 @@ A full-stack subscription management system with user authentication and CRUD fu
 
 ## Tech Stack
 - Frontend: HTML, CSS, JavaScript 
-- Backend: Node.js, Express
+- Backend: Node.js, Express , Session 
 - Database: MongoDB
 
 ## How to run
